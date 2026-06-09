@@ -2,6 +2,7 @@ package viduink.entities;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -11,14 +12,16 @@ public class Cliente {
     //Atributos da Cliente:
     public UUID id;
     public String nome;
-    public String email;
-    public String telefone;
+    public LocalDate dataNascimento;
+    public String profissao;
     public String cpf;
+    public String telefone;
+    public String email;
     public LocalDateTime dataHoraCadastro;
 
     //Método para salvar os dados do cliente em um arquivo:
-    public void salvarDados(){
-        try{
+    public void salvarDados() {
+        try {
             //Definindo o local e nome do arquivo:
             var fileWriter = new FileWriter("Clientes.txt", true);
 
@@ -35,11 +38,8 @@ public class Cliente {
 
             //Fechar o arquivo:
             printWriter.close();
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             System.out.println("Falha ao salvar dados.");
         }
     }
-
-
 }

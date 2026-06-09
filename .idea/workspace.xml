@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="942d65fd-7b06-49a1-a95b-e872216f993d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/viduink/AppCadastroDeClientes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/viduink/entities/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/viduink/AppCadastroDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viduink/AppCadastroDeClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/viduink/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viduink/entities/Cliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +16,65 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.7869899410882744E-32" />
+      <entry key="MS500" value="7.04870932034913E-7" />
+      <entry key="S2" value="0.06375842051272637" />
+      <entry key="S5" value="0.6410928652177451" />
+      <entry key="S10" value="1.3862163912203074" />
+      <entry key="S30" value="2.3190990210052767" />
+      <entry key="S60" value="2.647042315203735" />
+      <entry key="M2" value="3.361558310109559" />
+      <entry key="M5" value="15.734267952729002" />
+      <entry key="M10" value="42.71508403117624" />
+      <entry key="M15" value="61.50711766586082" />
+      <entry key="M30" value="89.77628444112247" />
+      <entry key="H1" value="109.04974397862217" />
+      <entry key="H2" value="120.36608847671339" />
+      <entry key="H4" value="126.50783501271036" />
+      <entry key="D1" value="131.89267953933455" />
+      <entry key="W1" value="132.84117897009713" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000002947" />
+      <entry key="S10" value="1.0000005925560396" />
+      <entry key="S30" value="1.0118903770216134" />
+      <entry key="S60" value="1.1541845441883496" />
+      <entry key="M2" value="1.618742117806676" />
+      <entry key="M5" value="2.709653843421213" />
+      <entry key="M10" value="3.5597101022451905" />
+      <entry key="M15" value="3.9556649666775394" />
+      <entry key="M30" value="4.429745213993533" />
+      <entry key="H1" value="4.7015588034335245" />
+      <entry key="H2" value="4.847273221334371" />
+      <entry key="H4" value="4.922736745114273" />
+      <entry key="D1" value="4.986995776486939" />
+      <entry key="W1" value="4.998139116347895" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="2.640570240248144E-16" />
+      <entry key="MS500" value="7.668098302229121E-4" />
+      <entry key="S2" value="0.2259346785466934" />
+      <entry key="S5" value="1.1098485019607702" />
+      <entry key="S10" value="2.0630628724525515" />
+      <entry key="S30" value="3.2052422088766517" />
+      <entry key="S60" value="3.731948427680867" />
+      <entry key="M2" value="4.936186814935665" />
+      <entry key="M5" value="18.410955121036082" />
+      <entry key="M10" value="46.24995745699305" />
+      <entry key="M15" value="65.44328149451309" />
+      <entry key="M30" value="94.19439125981869" />
+      <entry key="H1" value="113.74491330478693" />
+      <entry key="H2" value="125.21000986002907" />
+      <entry key="H4" value="131.4288545819649" />
+      <entry key="D1" value="136.87938321302406" />
+      <entry key="W1" value="137.8392762104529" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -38,7 +93,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/flipv/OneDrive/Imagens/Jobs/Full Stack Developer/JAVA Web Developer @ Coti/Aula 01 - 11-05-26/My IntelliJ Project/REMASTER/cadastro-clientes-remaster",
@@ -69,6 +124,7 @@
       <updated>1781028121569</updated>
       <workItem from="1781028122668" duration="345000" />
       <workItem from="1781028731159" duration="483000" />
+      <workItem from="1781034001943" duration="2185000" />
     </task>
     <servers />
   </component>
