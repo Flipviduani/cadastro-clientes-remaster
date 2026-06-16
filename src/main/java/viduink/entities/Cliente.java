@@ -10,16 +10,82 @@ import java.util.UUID;
 public class Cliente {
 
     //Atributos da Cliente:
-    public UUID id;
-    public String nome;
-    public LocalDate dataNascimento;
-    public String profissao;
-    public String cpf;
-    public String telefone;
-    public String email;
-    public LocalDateTime dataHoraCadastro;
+    private UUID id;
+    private String nome;
+    private LocalDate dataNascimento;
+    private String profissao;
+    private String cpf;
+    private String telefone;
+    private String email;
+    private LocalDateTime dataHoraCadastro;
 
-    //Método para salvar os dados do cliente em um arquivo:
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public String getProfissao() {
+        return profissao;
+    }
+
+    public void setProfissao(String profissao) {
+        this.profissao = profissao;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public LocalDateTime getDataHoraCadastro() {
+        return dataHoraCadastro;
+    }
+
+    public void setDataHoraCadastro(LocalDateTime dataHoraCadastro) {
+        this.dataHoraCadastro = dataHoraCadastro;
+    }
+
+    /* Antes de ser refatorado:
+    Metodo para salvar os dados do cliente em um arquivo:
+
     public void salvarDados() {
         try {
             //Definindo o local e nome do arquivo:
@@ -41,5 +107,5 @@ public class Cliente {
         } catch (Exception e) {
             System.out.println("Falha ao salvar dados.");
         }
-    }
+    } */
 }

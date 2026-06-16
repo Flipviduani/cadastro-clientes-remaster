@@ -1,6 +1,8 @@
 package viduink;
 
 import viduink.entities.Cliente;
+import viduink.repositories.ClienteRepository;
+import viduink.services.ClienteService;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -9,7 +11,7 @@ import java.util.Scanner;
 import java.util.UUID;
 
 public class AppCadastroDeClientes {
-    static void main() {
+    static void main(String [] args) {
 
         System.out.println("\nSistema para cadastro de clientes.");
         System.out.println("\nPreencha os dados do cliente:");
@@ -20,30 +22,43 @@ public class AppCadastroDeClientes {
         //Criando um objeto para usar a classe Scanner do Java:
         var scanner = new Scanner(System.in);
 
+        /*Antes de refatorar:
         cliente.id = UUID.randomUUID(); //Gerando a ID do cliente
+
         cliente.dataHoraCadastro = LocalDateTime.now(); //Gerando a data e hora atuais
+         */
+
+        //Metodo para chamar o serviço do cliente
+        var service = new ClienteService();
+        //Metodo para chamar o repositório do cliente
+        var repository = new ClienteRepository();
+
+        service.prepararCadastro(cliente);
 
         System.out.print("\nNome..............: ");
-        cliente.nome = scanner.nextLine();
+        cliente.setNome(scanner.nextLine());
 
         var formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); //Usando o formatter para que o arquivo seja lido no padrão ABNT
+
         System.out.print("\nData de nascimento: ");
-        cliente.dataNascimento = LocalDate.parse(scanner.nextLine(), formatter);
+        cliente.setDataNascimento(
+                LocalDate.parse(scanner.nextLine(), formatter)
+        );
 
         System.out.print("\nProfissão.........: ");
-        cliente.profissao = scanner.nextLine();
+        cliente.setProfissao(scanner.nextLine());
 
         System.out.print("\nCPF...............: ");
-        cliente.cpf = scanner.nextLine();
+        cliente.setCpf(scanner.nextLine());
 
         System.out.print("\nTelefone..........: ");
-        cliente.telefone = scanner.nextLine();
+        cliente.setTelefone(scanner.nextLine());
 
         System.out.print("\nE-mail............: ");
-        cliente.email = scanner.nextLine();
+        cliente.setEmail(scanner.nextLine());
 
-        //Executando o método para salvar os dados do cliente
-        cliente.salvarDados();
+        //Executando o metodo para salvar os dados do cliente
+        repository.salvar(cliente);
 
     }
 }
