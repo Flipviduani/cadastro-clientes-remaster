@@ -5,13 +5,11 @@ import viduink.repositories.ClienteRepository;
 import viduink.services.ClienteService;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
-import java.util.UUID;
 
 public class AppCadastroDeClientes {
-    static void main(String [] args) {
+    static void main(String[] args) {
 
         System.out.println("\nSistema para cadastro de clientes.");
         System.out.println("\nPreencha os dados do cliente:");
@@ -21,12 +19,6 @@ public class AppCadastroDeClientes {
 
         //Criando um objeto para usar a classe Scanner do Java:
         var scanner = new Scanner(System.in);
-
-        /*Antes de refatorar:
-        cliente.id = UUID.randomUUID(); //Gerando a ID do cliente
-
-        cliente.dataHoraCadastro = LocalDateTime.now(); //Gerando a data e hora atuais
-         */
 
         //Metodo para chamar o serviço do cliente
         var service = new ClienteService();

@@ -1,7 +1,5 @@
 package viduink.entities;
 
-import java.io.FileWriter;
-import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -82,30 +80,4 @@ public class Cliente {
     public void setDataHoraCadastro(LocalDateTime dataHoraCadastro) {
         this.dataHoraCadastro = dataHoraCadastro;
     }
-
-    /* Antes de ser refatorado:
-    Metodo para salvar os dados do cliente em um arquivo:
-
-    public void salvarDados() {
-        try {
-            //Definindo o local e nome do arquivo:
-            var fileWriter = new FileWriter("Clientes.txt", true);
-
-            //Escrever no arquivo
-            var printWriter = new PrintWriter(fileWriter);
-
-            printWriter.println(id);
-            printWriter.println(nome);
-            printWriter.println(email);
-            printWriter.println(telefone);
-            printWriter.println(cpf);
-            printWriter.println(dataHoraCadastro);
-            printWriter.println("*******");
-
-            //Fechar o arquivo:
-            printWriter.close();
-        } catch (Exception e) {
-            System.out.println("Falha ao salvar dados.");
-        }
-    } */
 }
